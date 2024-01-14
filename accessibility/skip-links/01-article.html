@@ -8,24 +8,32 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" href="/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="00-styles.css">
+    <link rel="stylesheet" href="01-styles.css">
   </head>
   <body class="article-page">
-
+    <!-- Skip links -->
+    <nav aria-label="Skip links">
+      <ul class="off-screen">
+        <li><a href="#a11y-primary-nav" class="skip-link">Skip to primary navigation</a></li>
+        <li>
+          <a href="#a11y-main-content" class="skip-link">Skip to main content</a>
+        </li>
+      </ul>
+    </nav>
     <!-- Header -->
     <header class="header" data-section-theme="dark">
       <div class="container">
         <div class="header-container">
           <div class="header-logo">
             <a href="/">
-              <img src="../images/logo-white.png" alt="Techium logo" width="160" height="40">
+              <img src="../../../../project/src/images/logo-white.png" alt="Techium logo" width="160" height="40">
             </a>
           </div>
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn">
             <span class="navicon"></span>
           </label>
-          <nav class="navbar-menu">
+          <nav class="navbar-menu" id="a11y-primary-nav" tabindex="-1">
             <ul class="nav">
               <li class="nav-item">
                 <a href="/" class="nav-link">Home</a>
@@ -68,10 +76,10 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main id="a11y-main-content" tabindex="-1">
 
       <!-- Hero section -->
-      <header class="section-hero hero-article" data-section-theme="dark" style="background-image: url('../images/pic-article-02.jpg')">
+      <header class="section-hero hero-article" data-section-theme="dark" style="background-image: url('../../../../project/src/images/pic-article-02.jpg')">
         <div class="container">
           <div class="section-body">
             <section class="section-inner">
@@ -100,7 +108,7 @@
               <p>Morbi pharetra congue ante ac tincidunt. Donec euismod eu mauris nec laoreet. Praesent id sodales ipsum. Aliquam erat volutpat. Ut porta sem eget libero faucibus, eget convallis nisi finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum accumsan euismod nunc quis viverra.</p>
 
               <figure>
-                <img src="../images/the-honest-company-j69c0Q650Hw-unsplash.jpg" alt="Glasses, baby converse shoes, black bag, wipper on a dresser with a open drawer" width="620" height="350">
+                <img src="../../../../project/src/images/the-honest-company-j69c0Q650Hw-unsplash.jpg" alt="Glasses, baby converse shoes, black bag, wipper on a dresser with a open drawer" width="620" height="350">
                 <figcaption class="img-caption">Pugnant Stoici cum Peripateticis. Prioris generis est docilitas</figcaption>
               </figure>
 
@@ -253,7 +261,7 @@
       <div  class="container">
         <div class="row">
           <div class="col-1-2">
-            <img src="../images/logo-white.png" alt="Techium logo" width="160" height="40">
+            <img src="../../../../project/src/images/logo-white.png" alt="Techium logo" width="160" height="40">
             <address class="footer-address">
               234 Washington Street<br>
               Urbana, Illinois
